@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(8, 222, 233);
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration:beige;
+    color: black;
+}
+.content {
+    justify-content: center;
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: rgb(8, 222, 233);
+    text-align: center;
+}
+
+footer button {
+    color:black;
+    background-color: yellow;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+#heading{
+    margin:30px;
+    text-align: center;
+}
