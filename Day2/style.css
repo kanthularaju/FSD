@@ -1,0 +1,51 @@
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    margin: 30px auto 0;
+    width: 200px;
+}
+h1:hover{
+    transition:background-color,border-radius 1s ease-in-out 0s;
+    background-color:silver;
+    border-radius: 50%;
+}
+.div1,.div2,.div3,.div4{
+    margin-top: 10px;
+    border:2px solid black;
+    height:100px;
+    width: 100px;
+    color: red;
+    background-color: black;
+}
+.div1:hover{
+    transition: width 3s,background-color 3s,font-size 3s ;
+    background-color: aqua;
+    width:500px;
+    font-size: 50px;
+}
+.div2:hover{
+    transition: width 3s,background-color 3s,font-size 3s ;
+    transition-timing-function: ease-in;
+    background-color:yellow;
+    width:500px;
+    font-size: 50px;
+}
+.div3:hover{
+    transition: width 3s,background-color 3s,font-size 3s,border-radius 3s ;
+    transition-timing-function: ease-out;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.div4:hover{
+    transition: width 3s,background-color 3s,font-size 3s ;
+    transition-timing-function: blue;
+    background-color: aqua;
+    width:500px;
+    font-size: 50px;
+}

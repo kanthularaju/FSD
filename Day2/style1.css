@@ -1,0 +1,173 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:30px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+h1{
+    color:#333;
+    margin-bottom:10px;
+}
+
+ .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+} 
+
+ .card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+} 
+
+.box{
+    width:100px;
+    height:100px;
+    margin:20px auto;
+    border-radius:10px;
+    background:#3498db;
+}
+
+/* Color Transition */
+.color-box{
+    transition:background 0.5s;
+}
+
+.color-box:hover{
+    background:#e74c3c;
+}
+
+/* Scale Transition */
+.scale-box{
+    transition:transform 0.5s;
+}
+
+.scale-box:hover{
+    transform:scale(1.3);
+}
+
+/* Rotate Transition */
+.rotate-box{
+    transition:transform 2s;
+}
+
+.rotate-box:hover{
+    transform:rotate(360deg);
+}
+
+/* Skew */
+.skew-box:hover{
+    transform:skew(20deg);
+}
+
+/* Opacity */
+.opacity-box{
+    transition:0.5s;
+}
+.opacity-box:hover{
+    opacity:0.2;
+}
+
+/* Shadow */
+.shadow-box{
+    transition:0.5s;
+}
+.shadow-box:hover{
+    box-shadow:0 0 30px #3498db;
+}
+
+/* Fade In */
+.fade-box{
+    animation:fade 2s infinite;
+}
+
+/* Bounce Animation */
+.bounce-box{
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-40px);
+    }
+}
+
+/* Spin Animation */
+.spin-box{
+    animation:spin 3s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Pulse Animation */
+.pulse-box{
+    animation:pulse 3s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.5);
+    }
+    100%{
+        transform:scale(1);                                                                  
+    }
+}
+
+/* Fade In */
+.fade-box{
+    animation:fade 2s infinite;
+}
+@keyframes fade{
+    0%,100%{opacity:1;}
+    50%{opacity:0;}
+}
+
+/* Slide */
+.slide-box{
+    animation:slide 2s infinite alternate;
+}
+@keyframes slide{
+    from{transform:translateX(-100px);}
+    to{transform:translateX(100px);}
+}
+
+/* Shake */
+.shake-box{
+    animation:shake 1s infinite;
+}
+@keyframes shake{
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-10px);}
+    50%{transform:translateX(10px);}
+    75%{transform:translateX(-10px);}
+    100%{transform:translateX(0);}
+}

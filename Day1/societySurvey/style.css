@@ -1,6 +1,6 @@
 header {
     display: flex;
-    justify-content: space-between;
+    float:right;
     background-color: rgb(8, 222, 233);
     align-items: center;
     padding: 15px 20px;
